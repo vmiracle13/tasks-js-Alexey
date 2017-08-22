@@ -6,7 +6,16 @@
 
 //var y = (Yb - Ya) / (Xb - Xa) * x + Ya - (Yb - Ya)/(Xb - Xa)*Xa;
 
-var Xa, Xb, Ya, Yb, y, count = 0;
+let Xa = 12, Xb = 5, Ya = 2, Yb = 9, y, count = 0;
+let coord = [Xa, Xb, Ya, Yb];
+
+let result = coord.some((number) => {
+    return /\./.test(number.toString())
+});
+
+if (result) {
+    alert("Please, enter only integer numbers.")
+}
 
 var start, end;
 
